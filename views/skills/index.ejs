@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/skills/new">Add Skill</a>
+    <!-- List all skills here
+    Make each skills clickable
+    When each skill is clicked you cna see them in the show.ejs -->
+    <ul>
+        <% allSkills.forEach(function(skill, idx) { %>
+            <li>
+                <a href="/skills/<%= idx %>"><%= skill.title %></a>
+            </li>
+        <% }) %>
+
+    </ul>
+    <a href="/">Go To Home Page</a>
+</body>
+</html>
+
